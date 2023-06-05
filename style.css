@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-nav: 2.2rem;
+  --fs-h1: 4.8rem;
+  --fs-button: 1.4rem;
+  --fs-p: 1.8rem;
+
+
+  --fc-li: #C4C4CC;
+  --fc-h1: #E1E1E6;
+  --fc-white: #FFFFFF;
+  --fc-hover: #02799D;
+}
+
+body {
+  font-size: var(--fs-body);
+  font-family: 'Roboto', sans-serif;
+}
+
+.active {
+  font-weight: 700;
+  color: var(--fc-white);
+  font-size: 2.16rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main.home {
+  height: 100vh;
+  background: black url(./images/mountains-universe-1.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main nav {
+  display: flex;
+  width: 100%;
+  height: 12.2rem;
+  align-items: center;
+  justify-content: start;
+}
+
+main nav ul {
+  display: flex;
+  list-style: none;
+  min-width: 48.9rem;
+  height: 4.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-left: 7.2rem;
+  z-index: 1;
+}
+
+main .imageLink {
+  width: 5rem;
+  height: 4.2rem;
+}
+
+main .imageLink img {
+  pointer-events: none;
+}
+
+main nav ul li a {
+  padding: 0 1.1rem;
+  font-weight: 400;
+  font-size: var(--fs-nav);
+  line-height: 2.16rem;
+  cursor: pointer;
+  color: var(--fc-li);
+}
+
+main.home h1 {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--fc-h1);
+  margin-top: 17.2rem;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 20rem;
+  margin: 2.4rem auto 0;
+  padding: 1.2rem 3rem;
+  font-weight: 700;
+  font-size: var(--fs-button);
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: var(--fc-white);
+  border: 2px solid var(--fc-white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1);
+  border: 3px solid var(--fc-white);
+  color: var(--fc-hover);
+  font-size: 1.6rem;
+  background: var(--fc-white);
+  width: 22rem;
+}
+
+/* PAGE UNIVERSE */
+main.universe {
+  height: 100vh;
+  background: black url(./images/mountains-universe02.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main.universe .text {
+  margin: 6.3rem 0 0 10.2rem;
+}
+
+main.universe h1 {
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: 125%;
+  color: var(--fc-h1);
+}
+
+main.universe p {
+  width: 64.8rem;
+  font-weight: 400;
+  font-size: var(--fs-p);
+  line-height: 160%;
+  color: var(--fc-h1);
+  margin-top: 1.6rem;
+}
+
+/* PAGE EXPLORATION */
+main.exploration {
+  height: 100vh;
+  background: black url(./images/mountains-universe-3.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main.exploration .text {
+  margin: 6.3rem 0 0 10.2rem;
+}
+
+main.exploration h1 {
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: 125%;
+  color: var(--fc-h1);
+}
+
+main.exploration p {
+  width: 64.8rem;
+  font-weight: 400;
+  font-size: var(--fs-p);
+  line-height: 160%;
+  color: var(--fc-h1);
+  margin-top: 1.6rem;
+}
+
+@media (max-width: 660px) {
+  main nav {
+    display: flex;
+    width: 100%;
+    height: 12.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main nav ul {
+    display: flex;
+    list-style: none;
+    min-width: 20rem;
+    height: 4.2rem;
+    color: var(--fc-li);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 0px;
+  }
+  
+  main nav ul li {
+    padding: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 660px) {
+  main nav {
+    display: flex;
+    width: 100%;
+    height: 12.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main nav ul {
+    display: flex;
+    list-style: none;
+    min-width: 20rem;
+    height: 4.2rem;
+    color: var(--fc-li);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 0px;
+  }
+  
+  main nav ul li {
+    padding: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+  }
+}
+
